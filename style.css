@@ -1,0 +1,94 @@
+/* ===== EDIT COLOURS HERE ===== */
+:root{
+  --white:#e9ecf1; --red:#d9293b; --black:#1b1b1b;
+  --yellow:#f5c10f; --green:#2da44e; --blue:#1f5fc4;
+  --navy:#12243f; --bg:#f6f4ee; --card:#ffffff; --alt:#ecebe3;
+  --text:#12243f; --muted:#5a667a; --line:#d9d6cc;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+h1,h2,h3,h4{line-height:1.2}
+ul{padding-left:20px}li{margin:5px 0}
+
+/* NAVBAR */
+.nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 24px;background:var(--navy);color:#fff;overflow-x:auto}
+.logo{white-space:nowrap}
+.links{display:flex;gap:6px}
+.links a{color:#dbe6fb;text-decoration:none;padding:6px 12px;border-radius:99px;font-size:14px;white-space:nowrap}
+.links a:hover{background:rgba(255,255,255,.15);color:#fff}
+
+/* HERO */
+.hero{text-align:center;padding:80px 20px 60px;background:linear-gradient(160deg,var(--navy),#1d3b6b);color:#fff}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:#9cc2ff;font-weight:700}
+.hero h1{font-size:clamp(30px,6vw,56px);margin:12px auto;max-width:800px}
+.hero h1 span{color:var(--yellow)}
+.sub{font-size:19px;opacity:.85;max-width:620px;margin:0 auto}
+.hat-dots{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* SECTIONS */
+.section{padding:56px max(20px,calc((100% - 960px)/2))}
+.section.alt{background:var(--alt)}
+.section h2{font-size:clamp(24px,4vw,34px);margin-bottom:8px}
+.lead{color:var(--muted);font-size:18px;margin-bottom:26px;max-width:760px}
+.mt{margin-top:28px;margin-bottom:12px}
+
+/* CARDS */
+.cards{display:grid;gap:16px}
+.cards.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cards.three{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
+.card h3{margin-bottom:8px}
+.card.critical{border-top:6px solid var(--black)}
+.card.creative{border-top:6px solid var(--green)}
+
+/* HAT ARTICLES */
+.hat{background:var(--card);border:1px solid var(--line);border-left:10px solid var(--c);border-radius:var(--radius);margin-bottom:18px;overflow:hidden}
+.hat.white{--c:#b8bec9}.hat.red{--c:var(--red)}.hat.black{--c:var(--black)}
+.hat.yellow{--c:var(--yellow)}.hat.green{--c:var(--green)}.hat.blue{--c:var(--blue)}
+.hat-head{display:flex;align-items:center;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line)}
+.tagline{color:var(--muted);font-size:15px}
+.type{margin-left:auto;background:var(--c);color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:5px 12px;border-radius:99px}
+.hat.white .type,.hat.yellow .type{color:#12243f}
+.hat-body{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px 22px}
+.hat-body h4{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
+
+/* CASE */
+.case-box{background:var(--navy);color:#fff;border-radius:var(--radius);padding:22px 26px;margin-bottom:18px;font-size:17px}
+.order{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* POSTER */
+.poster-top .big{font-size:22px;font-weight:700}
+.motto{color:var(--blue);font-weight:700;margin-top:4px}
+.problem{background:var(--navy);color:#fff;border-radius:var(--radius);padding:18px 24px;margin-top:20px}
+.solutions{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.solutions div{display:flex;align-items:center;gap:14px;background:var(--card);border:2px solid var(--navy);border-radius:var(--radius);padding:14px 18px}
+.solutions span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+
+/* CONCLUSION */
+.tick{list-style:none;padding:0;font-size:18px}
+.tick li{padding-left:34px;position:relative;margin:12px 0}
+.tick li::before{content:"✔";position:absolute;left:0;color:var(--green);font-weight:700}
+
+/* FOOTER */
+footer{background:var(--blue);color:#fff;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:26px max(20px,calc((100% - 960px)/2))}
+footer strong{font-size:22px}
+
+/* ===== HAT SYMBOLS ===== */
+/* Hero hats */
+.hero-hat{width:68px;height:46px;--outline:#fff}
+.h-white{color:#ffffff}.h-red{color:var(--red)}.h-black{color:var(--black)}
+.h-yellow{color:var(--yellow)}.h-green{color:var(--green)}.h-blue{color:var(--blue)}
+
+/* Hat cards */
+.swatch{width:64px;height:44px;flex:none;color:var(--c);--outline:#12243f}
+.hat.white .swatch{color:#ffffff}
+
+/* Hat order chips */
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 10px;border-radius:99px;font-weight:700;font-size:14px;background:var(--card);color:var(--text);border:2px solid var(--line)}
+.chip svg{width:30px;height:21px;--outline:#12243f}
+.chip.white svg{color:#ffffff}.chip.red svg{color:var(--red)}.chip.black svg{color:var(--black)}
+.chip.yellow svg{color:var(--yellow)}.chip.green svg{color:var(--green)}.chip.blue svg{color:var(--blue)}
+
+@media(max-width:560px){.type{display:none}.links a{padding:6px 8px}.hero-hat{width:52px;height:36px}}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Six Thinking Hats | AI Learning Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<!-- HAT SHAPE (drawn once, reused everywhere with <use href="#hat">) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="hat" viewBox="0 0 64 44">
+    <path d="M14 28 C14 10 22 4 32 4 C42 4 50 10 50 28 Z" fill="currentColor" style="stroke:var(--outline,#12243f);stroke-width:2.5;stroke-linejoin:round"/>
+    <ellipse cx="32" cy="31" rx="29" ry="8" fill="currentColor" style="stroke:var(--outline,#12243f);stroke-width:2.5"/>
+  </symbol>
+</svg>
+ 
+<!-- ============ NAVBAR ============ -->
+<nav class="nav">
+  <strong class="logo">🎩 Six Hats</strong>
+  <div class="links">
+    <a href="#theory">Theory</a>
+    <a href="#hats">The Hats</a>
+    <a href="#thinking">Creative vs Critical</a>
+    <a href="#case">Case</a>
+    <a href="#poster">Poster</a>
+    <a href="#conclusion">Conclusion</a>
+  </div>
+</nav>
+ 
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <p class="eyebrow">Critical Thinking Project</p>
+  <h1>Problem Solving Using the <span>Six Thinking Hats</span></h1>
+  <p class="sub">Applied to an AI-Based Personalized Learning Assistant in our college.</p>
+  <div class="hat-dots">
+    <svg class="hero-hat h-white"  viewBox="0 0 64 44"><use href="#hat"/></svg>
+    <svg class="hero-hat h-red"    viewBox="0 0 64 44"><use href="#hat"/></svg>
+    <svg class="hero-hat h-black"  viewBox="0 0 64 44"><use href="#hat"/></svg>
+    <svg class="hero-hat h-yellow" viewBox="0 0 64 44"><use href="#hat"/></svg>
+    <svg class="hero-hat h-green"  viewBox="0 0 64 44"><use href="#hat"/></svg>
+    <svg class="hero-hat h-blue"   viewBox="0 0 64 44"><use href="#hat"/></svg>
+  </div>
+</header>
+ 
+<main>
+ 
+<!-- ============ THEORY ============ -->
+<section id="theory" class="section">
+  <h2>What are the Six Thinking Hats?</h2>
+  <p class="lead">A technique created by <b>Edward de Bono</b> for brainstorming and problem solving. Six coloured hats make us look at an issue from <b>one angle at a time</b>. This is called <b>parallel thinking</b>: everyone thinks in the same direction together instead of arguing from different directions.</p>
+  <div class="cards three">
+    <div class="card"><h3>🎯 Why it works</h3><p>Separating facts, feelings, risks, benefits and ideas stops one type of thinking from dominating the discussion.</p></div>
+    <div class="card"><h3>👥 Who uses it</h3><p>Students, teams, managers and colleges, wherever a decision needs balanced thinking.</p></div>
+    <div class="card"><h3>🔁 How it runs</h3><p>Hats are worn one after another. The order is chosen by the Blue Hat to suit the problem.</p></div>
+  </div>
+</section>
+ 
+<!-- ============ THE SIX HATS ============ -->
+<section id="hats" class="section alt">
+  <h2>The Six Hats: Colour, Purpose and Impact</h2>
+  <p class="lead">Each hat has a colour, a purpose and a clear impact on our case scenario.</p>
+ 
+  <!-- To edit a hat: change the text. To add one: copy a whole <article> block. -->
+  <article class="hat white">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>White Hat</h3><p class="tagline">Facts and Information</p></div><span class="type">Analytical</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Focus on objective facts, data and information. No opinions, only what we know and what we still need to find out.</p></div>
+      <div><h4>Key questions</h4><ul><li>What do we know?</li><li>What information is missing?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Reveals gaps: how data is stored and protected, who can access it, how accurate and unbiased the AI is, the cost, and whether students can opt out.</p></div>
+    </div>
+  </article>
+ 
+  <article class="hat red">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>Red Hat</h3><p class="tagline">Feelings and Intuition</p></div><span class="type">Emotional</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Express gut feelings, emotions and intuition without having to justify them.</p></div>
+      <div><h4>Key questions</h4><ul><li>How do we feel about this?</li><li>What is our gut reaction?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Shows excitement about easier learning and worry about privacy, constant monitoring and unfair suggestions. Teachers should check AI suggestions.</p></div>
+    </div>
+  </article>
+ 
+  <article class="hat black">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>Black Hat</h3><p class="tagline">Caution and Risk</p></div><span class="type">Critical</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Identify risks, dangers and drawbacks, and why something might not work.</p></div>
+      <div><h4>Key questions</h4><ul><li>What could go wrong?</li><li>What are the obstacles?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Flags data leaks, biased or wrong recommendations, over-reliance on AI, high cost, poor internet access, lack of training and reduced teacher interaction.</p></div>
+    </div>
+  </article>
+ 
+  <article class="hat yellow">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>Yellow Hat</h3><p class="tagline">Benefits and Value</p></div><span class="type">Constructive</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Focus on positives, benefits and the value an idea can create.</p></div>
+      <div><h4>Key questions</h4><ul><li>What are the advantages?</li><li>What is the potential upside?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Personalized materials, early detection of weak areas, learning at your own pace, doubt clearing for shy students and more teacher time for mentoring.</p></div>
+    </div>
+  </article>
+ 
+  <article class="hat green">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>Green Hat</h3><p class="tagline">Creativity and Ideas</p></div><span class="type">Creative</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Generate new ideas, possibilities and alternative solutions.</p></div>
+      <div><h4>Key questions</h4><ul><li>What new ideas can we generate?</li><li>What are other perspectives?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Produces the pilot programme, opt-in consent, faculty review, offline materials, training sessions, feedback reporting and clear privacy rules.</p></div>
+    </div>
+  </article>
+ 
+  <article class="hat blue">
+    <div class="hat-head"><svg class="swatch" viewBox="0 0 64 44"><use href="#hat"/></svg><div><h3>Blue Hat</h3><p class="tagline">Process and Control</p></div><span class="type">Organizing</span></div>
+    <div class="hat-body">
+      <div><h4>Purpose</h4><p>Manage the thinking process, set objectives and keep the discussion on track.</p></div>
+      <div><h4>Key questions</h4><ul><li>What is the agenda?</li><li>Which hat next? What is the conclusion?</li></ul></div>
+      <div><h4>Impact on our case</h4><p>Sets the order (White, Blue, Red, Black, Yellow, Green), defines primary and alternative plans and turns the discussion into a decision.</p></div>
+    </div>
+  </article>
+</section>
+ 
+<!-- ============ CREATIVE VS CRITICAL ============ -->
+<section id="thinking" class="section">
+  <h2>Creative Thinking vs Critical Thinking</h2>
+  <p class="lead">The hats work together: some question and test ideas, others create them.</p>
+  <div class="cards two">
+    <div class="card critical">
+      <h3>🔍 Critical Thinking</h3>
+      <p>Analysing, questioning and judging information to reach a sound decision.</p>
+      <p><b>Hats:</b> White, Black, Yellow</p>
+      <ul>
+        <li><b>White:</b> checks facts and spots missing data about privacy and accuracy.</li>
+        <li><b>Black:</b> tests the plan for risks like bias and data leaks.</li>
+        <li><b>Yellow:</b> weighs the real value before accepting it.</li>
+      </ul>
+    </div>
+    <div class="card creative">
+      <h3>💡 Creative Thinking</h3>
+      <p>Producing new ideas and solutions beyond the obvious.</p>
+      <p><b>Hats:</b> Green, Red</p>
+      <ul>
+        <li><b>Green:</b> invents the pilot, opt-in consent and oversight committee.</li>
+        <li><b>Red:</b> intuition and feelings point to hidden concerns such as monitoring stress.</li>
+        <li><b>Blue</b> ties both together into one plan.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ CASE ============ -->
+<section id="case" class="section alt">
+  <h2>Case Scenario 1</h2>
+  <p class="lead">AI-Based Personalized Learning Assistant in Classrooms</p>
+  <blockquote class="case-box">A tech company is offering our college an AI-powered learning assistant that can track students’ progress, suggest personalized content, and alert faculty when a student is at risk of falling behind. The college is considering using it across all departments. It promises better learning efficiency, but students and faculty are worried about <b>data privacy</b>, <b>over-reliance on AI</b> and <b>bias in recommendations</b>.</blockquote>
+  <p><b>Why I chose it:</b> it covers AI, student privacy and data security, allows creative solutions, and is a real college-level decision. I believe <b>AI should support students and teachers, not replace them.</b></p>
+ 
+  <h3 class="mt">Hat Order</h3>
+  <div class="order">
+    <span class="chip white"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>White</span><b>→</b>
+    <span class="chip blue"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>Blue</span><b>→</b>
+    <span class="chip red"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>Red</span><b>→</b>
+    <span class="chip black"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>Black</span><b>→</b>
+    <span class="chip yellow"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>Yellow</span><b>→</b>
+    <span class="chip green"><svg viewBox="0 0 64 44"><use href="#hat"/></svg>Green</span>
+  </div>
+ 
+  <div class="cards two mt">
+    <div class="card"><h3>✅ Primary Plan</h3><p>Pilot the assistant in a few departments. Teachers verify AI suggestions, data is protected, users are trained and give feedback. Expand to all departments if it works safely.</p></div>
+    <div class="card"><h3>🛟 Alternative Plan</h3><p>Use AI only for study materials and quizzes. Teachers keep tracking progress manually. Pause the tool if privacy problems appear, fix them, then retry.</p></div>
+  </div>
+</section>
+ 
+<!-- ============ POSTER ============ -->
+<section id="poster" class="section">
+  <div class="poster-top">
+    <h2>Smart Learning, Safe Data</h2>
+    <p class="big">AI That Supports, Not Replaces</p>
+    <p class="motto">Pilot it. Protect it. Prove it.</p>
+  </div>
+  <div class="problem"><b>THE PROBLEM</b><br>An AI learning assistant promises better results, but raises concerns about privacy, bias and over-reliance.</div>
+ 
+  <h3 class="mt">Our Solution: Pilot, Protect, Participate</h3>
+  <div class="solutions">
+    <div><span>1</span>Start small with a <b>one-semester pilot</b></div>
+    <div><span>2</span>Student data stays with the college, <b>encrypted and never sold</b></div>
+    <div><span>3</span><b>Opt-in consent</b> with no penalty for opting out</div>
+    <div><span>4</span><b>Faculty make the final call</b>, AI only suggests</div>
+    <div><span>5</span><b>Bias audits</b> every semester</div>
+    <div><span>6</span><b>Student and faculty</b> oversight committee</div>
+  </div>
+ 
+  <h3 class="mt">Impact</h3>
+  <div class="cards three">
+    <div class="card"><h3>Personalized help</h3><p>for every learner</p></div>
+    <div class="card"><h3>Early support</h3><p>for struggling students</p></div>
+    <div class="card"><h3>Faculty time</h3><p>freed up for mentoring</p></div>
+  </div>
+</section>
+ 
+<!-- ============ CONCLUSION ============ -->
+<section id="conclusion" class="section alt">
+  <h2>Conclusion</h2>
+  <p class="lead">Introducing the AI learning assistant is a good decision <b>if used carefully</b>.</p>
+  <ul class="tick">
+    <li>It helps students understand topics, find weak areas and improve performance.</li>
+    <li>Risks (privacy, wrong suggestions, cost, over-dependence) are managed with protection, training and teacher checks.</li>
+    <li>Start with a trial in a few departments, then expand gradually.</li>
+    <li><b>AI is a supporting tool, never a replacement for teachers.</b></li>
+  </ul>
+</section>
+ 
+</main>
+ 
+<!-- ============ FOOTER (edit your details) ============ -->
+<footer>
+  <strong>Let’s adopt AI responsibly.</strong>
+  <span>Nishant Kumar Sah · PRN 26070122135 · CSE · B2</span>
+</footer>
+ 
+</body>
+</html>
